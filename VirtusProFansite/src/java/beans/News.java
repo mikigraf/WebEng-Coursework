@@ -39,6 +39,10 @@ public class News implements Serializable{
         
     }
     
+    public String getShort(){
+        return news.substring(0,79);
+    }
+    
     public String getID()
     {
         return id.toString();

@@ -17,7 +17,7 @@ public class Shoutbox {
     private static List<ShoutboxMessage> listOfMessages = Collections.synchronizedList(new LinkedList<>());
     
     
-    public static synchronized void add(ShoutboxMessage msg){
+    public static void add(ShoutboxMessage msg){
         listOfMessages.add(msg);
     }
     

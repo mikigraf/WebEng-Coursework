@@ -46,10 +46,95 @@
             </nav>
 
             <div class='row'>
-                <div class='content'>
-
+                <div class='team'>
+                    <div class='col s12 m4 l2'>
+                        <div class='card player'>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class='responsive' src='https://cdn0.gamesports.net/edb_player_images/2000/2714.jpg?1440160175'>
+                                            <span class="card-title"></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p> Wiktor TaZ Wojtas </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col s12 m4 l2'>
+                        <div class='card player'>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class='responsive' src='https://cdn0.gamesports.net/edb_player_images/2000/2712.jpg?1440160166'>
+                                            <span class="card-title"></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p> Filip Neo Kubski </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col s12 m4 l2'>
+                        <div class='card player'>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class='responsive' src='https://cdn0.gamesports.net/edb_player_images/2000/2706.jpg?1440160194'>
+                                            <span class="card-title"></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p> Snax </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col s12 m4 l2'>
+                        <div class='card player'>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class='responsive' src='https://cdn0.gamesports.net/edb_player_images/2000/2704.jpg?1440160202'>
+                                            <span class="card-title"></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p> byali </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col s12 m4 l2'>
+                        <div class='card player'>
+                            <div class="row">
+                                <div class="col s12 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img class='responsive' src='https://cdn0.gamesports.net/edb_player_images/2000/2713.jpg?1440160184'>
+                                            <span class="card-title"></span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p> Jarosław pasha Jarząbkowski </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <jsp:include page="footer.jsp"/>`
         </div>
     </body>
 </html>

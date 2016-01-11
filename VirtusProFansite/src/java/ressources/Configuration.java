@@ -12,7 +12,7 @@ import javax.ws.rs.ApplicationPath;
  *
  * @author spejs
  */
-@ApplicationPath("resources")
+@ApplicationPath("ressources")
 public class Configuration extends Application {
    
 }

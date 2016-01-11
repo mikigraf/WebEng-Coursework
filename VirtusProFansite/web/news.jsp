@@ -11,7 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>VirtusPro</title>
-
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
@@ -27,7 +26,6 @@
                 $(".button-collapse").sideNav();
             })
         </script>
-
     </head>
     <body>
         <div class="container">
@@ -46,59 +44,35 @@
                     </ul>
                 </div>
             </nav>
-
             <div class='row'>
                 <div class='content'>
-
                     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
                     <jsp:useBean id="newsList" class="model.NewsModel" scope="page" />
-
                     <%
-                        if (request.getParameter("id") == null) {
-                    %>
-                    <c:forEach var="news" items="${newsList.getNews()}">
-                        <article>
-                            <header>
-                                <a href="Vereinsnachricht-Detailseite.jsp?id=${news.getID()}">
-                                    <h4>${news.getTitle()}</h4></a>
-                            </header>
-                            <footer>
-                                <p>
-                                    von ${news.getAuthor()} am ${news.getDate()}
-                                </p>
-                            </footer>
-                        </article>
-                    </c:forEach>
-                    <%
-                    } else {
                         News news = newsList.getNews(request.getParameter("id"));
                         if (news != null) {
                     %>
-                    <article>
-                        <header><h4><%=news.getTitle()%></h4></header>
-                        <section><p><%=news.getNews()%></p></section>
-                        <footer>
-                            <p>
-                                von <%=news.getAuthor()%> am <%=news.getDate()%> in <%=news.getCategory()%>
-                            </p>
-                        </footer>
-                    </article>
+                    <div class="row" style="padding: 1%">
+                        <div class="col s12">
+                            <div class="card ">
+                                <div class="card-content black-text">
+                                    <span class="card-title"><%=news.getTitle()%></span>
+                                    <p>
+                                        von <%=news.getAuthor()%> am <%=news.getDate()%> in <%=news.getCategory()%>
+                                    </p>
+                                    <p class="flow-text"><%=news.getNews()%></p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="index.jsp">go back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <%
-                    } else {
-                    %>
-                    <p>News not found</p>
-                    <%
-                            }
-                        }
-                    %>
-
+                        }%>
                 </div>
-
             </div>
-
+            <jsp:include page="footer.jsp"/>
         </div>
-    </div>
-</div>
-</body>
+    </body>
 </html>
