@@ -1,0 +1,7 @@
+/VirtusProFansite/nbproject/private/
+/VirtusProFansite/build/
+*.xml
+
+*.properties
+
+*.MF
