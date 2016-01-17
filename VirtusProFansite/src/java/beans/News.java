@@ -40,7 +40,11 @@ public class News implements Serializable{
     }
     
     public String getShort(){
-        return news.substring(0,79);
+        if(news.length() > 79){
+            return news.substring(0,79);
+        }else{
+            return news;
+        }
     }
     
     public String getID(){
