@@ -14,5 +14,5 @@ import javax.ws.rs.ApplicationPath;
  */
 @ApplicationPath("ressources")
 public class Configuration extends Application {
-   
+
 }

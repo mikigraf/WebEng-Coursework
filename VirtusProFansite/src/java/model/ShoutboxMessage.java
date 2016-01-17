@@ -14,13 +14,14 @@ import java.util.Date;
  * @author spejs
  */
 public class ShoutboxMessage implements Serializable {
-    private String date;
     private String name;
     private String message;
+    private String date;
 
     public ShoutboxMessage(){
         this.date = new SimpleDateFormat("dd.MM.yyyy HH:mm").format(new Date());
     }
+
     public String getDate() {
         return date;
     }

@@ -16,13 +16,15 @@ import model.ShoutboxMessage;
  */
 @Path("shoutbox")
 public class ShoutboxService {
+    
+    
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     public List<ShoutboxMessage> getMessages(){
         return Shoutbox.getMessages();
     }
     
-    @POST
+    @PUT
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
     public ShoutboxMessage addMessage(ShoutboxMessage msg){

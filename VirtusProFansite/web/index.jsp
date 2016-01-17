@@ -94,25 +94,25 @@
                         }
                     %>
                     <div class="row" style="padding: 1%;">
-                        <div id="shoutbox">
-                            <div id="messages">
-                                <div> " + result[i].date + " " + result[i].name + ": " + result[i].message + "</div>
+                        <div id='messages' style="height:20%;overflow:auto;">
+
                             </div>
-                        </div>
                     </div>
+                    <form id="shout-form">
                     <div class="row" style="padding: 1%;">
-                        <div class="col s12 m4">
-                            <input type="text" maxlength="20" class="form-control col-sm-8" name="name" id="name">
+                        <div class="input-field col s12 m4">
+                            <input type="text" maxlength="20" class="form-control col-sm-8" name="name" id="name" placeholder="name">
                         </div>
-                        <div class="col s12 m8">
-                            <input type="text" onkeyup="count()" maxlength="240" class="form-control col-sm-8" name="message" id="message">
+                        <div class="input-field col s12 m8">
+                            <input type="text" onkeyup="count()" maxlength="240" class="form-control col-sm-8" name="message" id="message" placeholder="messages">
                         </div>
                         <div class="col s12">
-                             <div id="limit"></div>
-                            <button id="shout-submit" class="btn btn-primary col-sm-2"> Submit </button>
+                            <div id="limit"></div>
+                            <button id="shout-submit" type='submit' value='submit' class="btn btn-primary col-sm-2"> Submit </button>
                         </div>
                     </div>
-                   
+                    </form>
+
                     <script>
                         var box = document.getElementById("message");
                         var limit = document.getElementById("limit");
